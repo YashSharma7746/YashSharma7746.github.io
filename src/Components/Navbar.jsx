@@ -1,17 +1,18 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Image } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {AiOutlineFundProjectionScreen, AiOutlineHome, AiOutlineTool, AiOutlineUser} from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import {PhoneIcon} from "@chakra-ui/icons";
+import logo from "../Assets/logo.png";
 import "./navbar.css"
 import Menuu from './Menu';
 const Navbar = () => {
   return (
-    <Box position="sticky" top="0" w="100%" zIndex={"1000"} p="20px 20px 0px 0px" backgroundColor="#0A0416" filter="blur" h="5rem">
+    <Box position="sticky" top="0" w="100%" zIndex={"1000"} p="20px 20px 0px 0px" backgroundColor="#0A0416" filter="blur" h="5.7rem">
       <Box display={{base:"none",sm:"none",md:"none",lg:"flex",xl:"flex","2xl":"flex"}}  top="0" justifyContent={"space-between"}>
         <Box>
-          {/*<Image src="" alt="logo"/>*/}
+          <Image w="70px" src={logo} alt="logo"/>
         </Box>
         <Box display={"flex"} mr="15px" gap="50px" fontSize={"20px"}>
           <Box className='link' display={"flex"} justifyContent="center" alignItems={"center"}>

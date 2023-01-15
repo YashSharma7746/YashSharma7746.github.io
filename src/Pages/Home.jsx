@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Button, Heading, Image, Link, Text } from '@chakra-ui/react';
 import React from 'react'
 import { useEffect } from 'react';
 import { CgFileDocument } from 'react-icons/cg';
@@ -15,7 +15,8 @@ const Home = () => {
     if(window){
       const navigate = id && document.getElementById(id) ? document.getElementById(id).offsetTop:0; window.scrollTo(0,navigate || 0);
     }
-  },[id])
+  },[id]);
+  
   return (
     <>
       <Box id="home" display={"grid"} gridTemplateColumns={{base:"repeat(1,1fr)",sm:"repeat(1,1fr)",lg:"repeat(2,1fr)",xl:"repeat(2,1fr)"}} p={{base:"15px",sm:"15px",lg:"30px",xl:"40px"}} w="85%" m="auto" mt="80px">
@@ -30,9 +31,11 @@ const Home = () => {
               loop: true,
             }}
           /></Box>
-          <Button colorScheme={"transperent"} className="link" fontSize={"25px"} p="0" value="download">
-            <CgFileDocument style={{marginBottom:"2px",marginRight:"10px"}}/>Resume
-          </Button>
+          <Link href="../Assets/Resume.pdf" download>
+            <Button colorScheme={"transperent"} className="link" fontSize={"25px"} p="0" value="download">
+              <CgFileDocument style={{marginBottom:"2px",marginRight:"10px"}}/>Resume
+            </Button>
+          </Link>
           </Box>
         <Box display={"flex"} justifyContent="right">
           <Image src="https://taxpro.co.in/wp-content/uploads/2021/03/XBRL-with-CI-Taxonomy.png" w="70%"/>
