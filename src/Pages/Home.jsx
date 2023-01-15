@@ -37,7 +37,7 @@ const Home = () => {
             </Button>
           </Link>
           </Box>
-        <Box display={"flex"} justifyContent="right">
+        <Box display={"flex"} mt={{base:"50px","2xl":"none"}} justifyContent={{base:"center","2xl":"right"}}>
           <Image src="https://taxpro.co.in/wp-content/uploads/2021/03/XBRL-with-CI-Taxonomy.png" w="70%"/>
         </Box>
       </Box>

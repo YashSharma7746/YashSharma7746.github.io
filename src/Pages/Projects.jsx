@@ -60,17 +60,17 @@ const Projects = () => {
   return (
     <Box id="projects">
       <Box h="100px"></Box>
-      <Heading w="15%" m="auto" borderBottom={"5px solid white"}>Projects</Heading>
+      <Heading w={{base:"70%","2xl":"15%"}}  m="auto" borderBottom={"5px solid white"}>Projects</Heading>
       <Box>
         {project.map((project)=>{
-          return <Box w="70%" key={project.title} m="auto" boxShadow="rgba(89, 4, 168, 0.137) 4px 5px 4px 3px !important" mt="40px" border={"1.7px solid rgba(200, 137, 230, 0.635)"} p="20px" >
+          return <Box w={{base:"90%","2xl":"70%"}} key={project.title} m="auto" boxShadow="rgba(89, 4, 168, 0.137) 4px 5px 4px 3px !important" mt="40px" border={"1.7px solid rgba(200, 137, 230, 0.635)"} p="20px" >
             <Box className='glass' display={"grid"}  borderRadius="5px" backgroundColor="rgba(37, 38, 42, 0.44)" gridTemplateColumns={{base:"repeat(1,1fr)",sm:"repeat(1,1fr)",lg:"repeat(2,1fr)","2xl":"repeat(2,1fr)"}} justifyContent="space-between">
             <Box p="15px">
               <Image src={project.img} w="100%" />
               <Box fontSize={"25px"}>Tech Stacks
-              <Box display={"flex"} justifyContent="space-between" p="10px" boxShadow="rgba(89, 4, 168, 0.137) 4px 5px 4px 3px !important" border={"1.7px solid rgba(200, 137, 230, 0.635)"}>
+              <Box display={"flex"} justifyContent="space-between" p={{base:"","2xl":"10px"}} boxShadow="rgba(89, 4, 168, 0.137) 4px 5px 4px 3px !important" border={"1.7px solid rgba(200, 137, 230, 0.635)"}>
               {project.techStack.map((stack)=>{
-                return <Box cursor={"pointer"} className='glass' key={stack} fontSize={"30px"} p="8px" backgroundColor="rgba(37, 38, 42, 0.44)">
+                return <Box cursor={"pointer"} className='glass' key={stack} fontSize={{base:"20px","2xl":"30px"}} p="8px" backgroundColor="rgba(37, 38, 42, 0.44)">
                   {stacks[stack]}
                 </Box>
               })}

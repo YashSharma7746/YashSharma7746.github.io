@@ -74,7 +74,7 @@ const Skills = () => {
   return (
     <Box id="skills">
       <Box h="100px"></Box>
-      <Heading w="15%" p="10px" m="auto" borderBottom={"5px solid white"}>Skills</Heading>
+      <Heading w={{base:"70%","2xl":"15%"}} p="10px" m="auto" borderBottom={"5px solid white"}>Skills</Heading>
       <Box display={"grid"} gridTemplateColumns={{base:"repeat(1,1fr)",sm:"repeat(1,1fr)",lg:"repeat(2,1fr)",xl:"repeat(4,1fr)",}} gap="40px" justifyContent="space-between" w="80%" m="auto" mt="100px">
       {skills.map((i)=>{
         return <Box key={i.label} cursor={"pointer"} boxShadow="rgba(89, 4, 168, 0.137) 4px 5px 4px 3px !important" p="20px" border={"1.7px solid rgba(200, 137, 230, 0.635)"} borderRadius="6px" mt="20px">
@@ -86,7 +86,7 @@ const Skills = () => {
       })}
       </Box>
       <Box h="100px"></Box>
-      <Heading w="15%" p="10px" m="auto" borderBottom={"5px solid white"}>Tools</Heading>
+      <Heading w={{base:"70%","2xl":"15%"}}  p="10px" m="auto" borderBottom={"5px solid white"}>Tools</Heading>
       <Box display={"grid"} gridTemplateColumns={{base:"repeat(1,1fr)",sm:"repeat(1,1fr)",lg:"repeat(2,1fr)",xl:"repeat(4,1fr)",}} gap="40px" justifyContent="space-between" w="80%" m="auto" mt="100px">
       {tools.map((i)=>{
         return <Box key={i.label} cursor={"pointer"} boxShadow="rgba(89, 4, 168, 0.137) 4px 5px 4px 3px !important" p="20px" border={"1.7px solid rgba(200, 137, 230, 0.635)"} borderRadius="6px" mt="20px">
@@ -98,7 +98,7 @@ const Skills = () => {
       })}
       </Box>
       <Box h="100px"></Box>
-      <Heading w="15%" p="10px" m="auto" borderBottom={"5px solid white"}>Git Status</Heading>
+      <Heading w={{base:"70%","2xl":"15%"}}  p="10px" m="auto" borderBottom={"5px solid white"}>Git Status</Heading>
       <Box display={"flex"} justifyContent="center" mt="50px">
         <GitHubCalender username='YashSharma7746' blockSize={15} blockMargin={5} color="#c084f5" fontSize={16}/>
       </Box>
