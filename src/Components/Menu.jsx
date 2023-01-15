@@ -1,15 +1,10 @@
 import {
   Box,
   Flex,
-  Avatar,
-  HStack,
   IconButton,
   Button,
   Menu,
   MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
@@ -18,28 +13,6 @@ import { Link } from 'react-router-dom'
 import { HamburgerIcon, CloseIcon, PhoneIcon } from '@chakra-ui/icons';
 import {AiOutlineFundProjectionScreen, AiOutlineHome, AiOutlineTool, AiOutlineUser} from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
-
-const Links = [
-  {title:'Home', icon: <AiOutlineHome />}, 
-  {title:'About', icon: <AiOutlineUser/>}, 
-  {title:'Skills', icon: <AiOutlineTool />}, 
-  {title:'Projects', icon: <AiOutlineFundProjectionScreen />}, 
-  {title:'Contact', icon: <PhoneIcon />}, 
-  {title:'Resume', icon: <CgFileDocument />}];
-
-const NavLink = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('pruple.200', 'purple.700'),
-    }}
-    href={`${children}`}>
-    {children}
-  </Link>
-);
 
 export default function Menuu() {
   const { isOpen, onOpen, onClose } = useDisclosure();

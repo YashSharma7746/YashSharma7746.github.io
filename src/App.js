@@ -1,4 +1,4 @@
-import { Box, Heading, Image } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import AllRoutes from './Components/AllRoutes';
 import Navbar from './Components/Navbar';
 import "./style.css";

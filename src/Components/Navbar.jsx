@@ -8,31 +8,32 @@ import "./navbar.css"
 import Menuu from './Menu';
 const Navbar = () => {
   return (
-    <Box>
-      <Box display={{base:"none",sm:"none",md:"none",lg:"flex",xl:"flex","2xl":"flex"}} justifyContent={"space-between"}>
+    <Box position="sticky" top="0" w="100%" zIndex={"1000"} p="20px 20px 0px 0px" backgroundColor="#0A0416" filter="blur" h="5rem">
+      <Box display={{base:"none",sm:"none",md:"none",lg:"flex",xl:"flex","2xl":"flex"}}  top="0" justifyContent={"space-between"}>
         <Box>
           {/*<Image src="" alt="logo"/>*/}
         </Box>
-        <Box display={"flex"} mr="15px" gap="50px" p="20px" fontSize={"20px"}>
+        <Box display={"flex"} mr="15px" gap="50px" fontSize={"20px"}>
           <Box className='link' display={"flex"} justifyContent="center" alignItems={"center"}>
-            <AiOutlineHome style={{marginBottom:"2px",marginRight:"10px"}}/>
-            <Link to="/" >Home</Link>
+          <Link to="/" style={{display:"flex",alignItems:"center"}}>
+            <AiOutlineHome style={{marginBottom:"2px",marginRight:"10px"}}/>Home</Link>
           </Box>
           <Box className='link' display={"flex"} justifyContent="center" alignItems={"center"}>
-            <AiOutlineUser style={{marginBottom:"2px",marginRight:"10px"}}/>
-            <Link to="/about">About</Link>
+          <Link to="/about" style={{display:"flex",alignItems:"center"}}>
+            <AiOutlineUser style={{marginRight:"10px"}}/>About</Link>
           </Box>
           <Box className='link' display={"flex"} justifyContent="center" alignItems={"center"}>
-            <AiOutlineTool style={{marginBottom:"2px",marginRight:"10px"}}/>
-            <Link to="/skills">Skills</Link>
+          <Link to="/skills" style={{display:"flex",alignItems:"center"}}>
+            <AiOutlineTool style={{marginRight:"10px"}}/>Skills</Link>
           </Box>
           <Box className='link' display={"flex"} justifyContent="center" alignItems={"center"}>
-            <AiOutlineFundProjectionScreen style={{marginBottom:"2px",marginRight:"10px"}}/>
-            <Link to="/projects">Projects</Link>
+          <Link to="/projects" style={{display:"flex",alignItems:"center"}}>
+            <AiOutlineFundProjectionScreen style={{marginBottom:"2px",marginRight:"10px"}}/>Projects</Link>
           </Box>
           <Box className='link' display={"flex"} justifyContent="center" alignItems={"center"}>
-            <PhoneIcon style={{marginBottom:"2px",marginRight:"10px"}}/>
-            <Link to="/contact">Contact</Link>
+            
+          <Link to="/contact" style={{display:"flex",alignItems:"center"}}>
+            <PhoneIcon style={{marginBottom:"2px",marginRight:"10px"}}/>Contact</Link>
           </Box>
           <Box className='link' display={"flex"} justifyContent="center" alignItems={"center"}>
             <CgFileDocument style={{marginBottom:"2px",marginRight:"10px"}}/>
