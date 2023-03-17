@@ -9,7 +9,7 @@ import {
   useColorModeValue,
   Stack,
 } from '@chakra-ui/react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll';
 import { HamburgerIcon, CloseIcon, PhoneIcon } from '@chakra-ui/icons';
 import {AiOutlineFundProjectionScreen, AiOutlineHome, AiOutlineTool, AiOutlineUser} from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
