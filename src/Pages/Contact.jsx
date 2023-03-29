@@ -1,6 +1,6 @@
-import { Box, Heading, Image, Link } from "@chakra-ui/react";
+import { Box, Heading, Image, Link, Text } from "@chakra-ui/react";
 import React from "react";
-import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import { AiFillGithub, AiOutlineMail, AiOutlineMobile } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 const Contact = () => {
   return (
@@ -27,7 +27,8 @@ const Contact = () => {
       >
         <Box lineHeight={"50px"} textAlign="left">
           <Box fontSize={{ base: "18px", "2xl": "30px" }} mt="30px">
-            <Link id="contact-email"
+            <Link
+              id="contact-email"
               href="mailto:yash10072000@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,7 +54,7 @@ const Contact = () => {
           </Box>
           <Box fontSize={{ base: "18px", "2xl": "30px" }} mt="30px">
             <Link
-              href="https://linkedin.com/in/YashSharma7746"
+              href="https://www.linkedin.com/in/YashSharma7746"
               id="contact-linkedin"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,8 +65,15 @@ const Contact = () => {
               linkedin.com/in/YashSharma7746
             </Link>
           </Box>
-          <Box id="contact-phone" fontSize={{ base: "18px", "2xl": "30px" }} mt="30px">
-            <Text>+91 6232743657</Text>
+          <Box
+            display={"flex"}
+            alignItems="center"
+            fontSize={{ base: "18px", "2xl": "30px" }}
+            mt="30px"
+            id="contact-phone"
+          >
+            <AiOutlineMobile style={{ marginRight: "20px" }} />
+            <Text cursor={"pointer"}>+91 6232743657</Text>
           </Box>
         </Box>
         <Box

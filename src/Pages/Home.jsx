@@ -75,7 +75,17 @@ const Home = () => {
               }}
             />
           </Box>
-          <Link href="../Assets/Resume.pdf" download>
+          <a
+            href="Yash_Sharma_Resume.pdf"
+            download="Yash_Sharma_Resume"
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1-27JqVP743yK-A3ZE3CvIRpF32OzsQfL/view?usp=sharing"
+              );
+            }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               colorScheme={"transperent"}
               className="link"
@@ -89,7 +99,7 @@ const Home = () => {
               />
               Resume
             </Button>
-          </Link>
+          </a>
         </Box>
         <Box
           display={"flex"}
