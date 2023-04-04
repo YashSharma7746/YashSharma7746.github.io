@@ -176,6 +176,7 @@ const Navbar = () => {
       </Box>
       <Menuu />
       <Box></Box>
+      <Box></Box>
     </Box>
   );
 };
